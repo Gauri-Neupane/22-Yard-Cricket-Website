@@ -2832,23 +2832,31 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem 0.7rem;
+  padding: 1.2rem 0.6rem;
   text-decoration: none;
   color: rgb(var(--color-foreground));
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
   white-space: nowrap;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1400px) {
   .header__menu-item {
-    padding: 1.2rem 0.4rem;
-    font-size: 1.25rem;
+    padding: 1.2rem 0.35rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.02em;
   }
 }
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
+}
+
+.header__menu-item--highlight,
+.header__menu-item--highlight:hover {
+  color: #c0392b;
 }
 
 .header__menu-item span {
