@@ -88,6 +88,74 @@
         "show_text_below": true
       }
     },
+    "jersey_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Enquire Now",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": true
+          }
+        }
+      },
+      "block_order": [
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/custom-jerseys-banner.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": true
+      }
+    },
+    "jersey_info": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Team Jerseys & Clothing",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fully customised jerseys and playing kit designed around your club, school, or company — your colours, logos, sponsor branding, player names and numbers. Ideal for cricket clubs, corporate teams, and tournaments.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Enquire Now",
+            "button_link": "shopify://pages/contact",
+            "button_label_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -151,6 +219,8 @@
     "hero",
     "featured_collection",
     "bat_repairs_promo",
+    "jersey_banner",
+    "jersey_info",
     "rich_text"
   ]
 }
