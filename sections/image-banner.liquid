@@ -21,6 +21,22 @@
       }
     }
   {%- endstyle -%}
+{%- elsif section.settings.mobile_natural_height and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }} .banner__media {
+        height: auto;
+      }
+
+      #Banner-{{ section.id }}::before,
+      #Banner-{{ section.id }} .banner__media::before,
+      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+  {%- endstyle -%}
 {%- endif -%}
 
 {%- style -%}
@@ -226,6 +242,13 @@
       ],
       "default": "medium",
       "label": "t:sections.image-banner.settings.image_height.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_natural_height",
+      "default": false,
+      "label": "Use natural image height on mobile",
+      "info": "Keeps the fixed height above on desktop, but avoids cropping on mobile by letting the image use its own aspect ratio there instead."
     },
     {
       "type": "select",

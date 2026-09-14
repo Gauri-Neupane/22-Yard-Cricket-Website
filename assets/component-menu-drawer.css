@@ -101,7 +101,15 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item {
   padding: 1.1rem 3rem;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: calc(1.6rem / var(--font-body-scale));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.menu-drawer__menu-item--highlight,
+.menu-drawer__menu-item--highlight:hover {
+  color: #c0392b;
 }
 
 .menu-drawer summary.menu-drawer__menu-item {

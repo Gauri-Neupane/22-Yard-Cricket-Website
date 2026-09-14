@@ -55,7 +55,7 @@
         "color_scheme": "inverse",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "category_showcase": {
@@ -168,7 +168,8 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
+        "mobile_natural_height": true,
         "image_behavior": "none",
         "desktop_content_position": "top-right",
         "desktop_content_alignment": "right",
@@ -243,7 +244,8 @@
       "settings": {
         "image": "shopify://shop_images/custom-jerseys-banner.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
+        "mobile_natural_height": true,
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
