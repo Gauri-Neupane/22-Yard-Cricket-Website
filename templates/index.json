@@ -65,7 +65,8 @@
           "settings": {
             "button_label_1": "Enquire About Repairs",
             "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": false
+            "button_style_secondary_1": false,
+            "button_label_2": ""
           }
         }
       },
@@ -75,7 +76,7 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "top-right",
         "desktop_content_alignment": "right",
