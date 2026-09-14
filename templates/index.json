@@ -58,63 +58,37 @@
         "show_text_below": true
       }
     },
-    "bat_repairs_promo": {
-      "type": "image-banner",
+    "promo_row": {
+      "type": "promo-row",
       "blocks": {
-        "buttons": {
-          "type": "buttons",
+        "bat_repairs": {
+          "type": "banner",
           "settings": {
-            "button_label_1": "Enquire About Repairs",
-            "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": false,
-            "button_label_2": ""
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
+            "button_label": "Enquire About Repairs",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "content_position": "top-right"
+          }
+        },
+        "jerseys": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/custom-jerseys-banner.png",
+            "button_label": "Enquire Now",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "content_position": "bottom-left"
           }
         }
       },
       "block_order": [
-        "buttons"
+        "bat_repairs",
+        "jerseys"
       ],
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "top-right",
-        "desktop_content_alignment": "right",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "jersey_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Enquire Now",
-            "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": true
-          }
-        }
-      },
-      "block_order": [
-        "buttons"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/custom-jerseys-banner.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "left",
-        "show_text_below": true
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "jersey_info": {
@@ -218,8 +192,7 @@
   "order": [
     "hero",
     "featured_collection",
-    "bat_repairs_promo",
-    "jersey_banner",
+    "promo_row",
     "jersey_info",
     "rich_text"
   ]
