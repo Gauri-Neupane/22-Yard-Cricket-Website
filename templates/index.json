@@ -165,6 +165,45 @@
         "show_text_below": true
       }
     },
+    "repairs_info": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bat Repair & Restoration",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cracked toe, damaged edges, worn grip, or a bat that's lost its knock-in? Our repair service restores your bat so you can keep playing with confidence — including knocking, oiling and taping to help extend its life.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Enquire About Repairs",
+            "button_link": "shopify://pages/contact",
+            "button_label_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "jersey_banner": {
       "type": "image-banner",
       "blocks": {
@@ -269,6 +308,7 @@
     "category_showcase",
     "featured_collection",
     "bat_repairs_promo",
+    "repairs_info",
     "jersey_banner",
     "jersey_info",
     "rich_text"
