@@ -25,7 +25,7 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.06rem;
-  font-size: calc(1.3rem / var(--font-body-scale));
+  font-size: 1.6rem;
 }
 
 a.announcement-bar__marquee-item:hover {
