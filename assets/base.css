@@ -2267,7 +2267,7 @@ input[type='checkbox'] {
   min-height: 3.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: calc(1.3rem / var(--font-body-scale));
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
@@ -2835,20 +2835,20 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem 0.6rem;
+  padding: 1.2rem calc(0.6rem / var(--font-body-scale));
   text-decoration: none;
   color: rgb(var(--color-foreground));
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: calc(1.3rem / var(--font-body-scale));
   white-space: nowrap;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1400px) {
   .header__menu-item {
-    padding: 1.2rem 0.35rem;
-    font-size: 1.15rem;
+    padding: 1.2rem calc(0.35rem / var(--font-body-scale));
+    font-size: calc(1.15rem / var(--font-body-scale));
     letter-spacing: 0.02em;
   }
 }
