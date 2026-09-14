@@ -17,17 +17,49 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on Orders Over $100 — Proudly Australian",
+            "text": "Free Shipping on Orders Over $100",
+            "link": ""
+          }
+        },
+        "announcement-bar-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Bat Repair Services",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "announcement-bar-2": {
+          "type": "announcement",
+          "settings": {
+            "text": "Customise Team Wear",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "announcement-bar-3": {
+          "type": "announcement",
+          "settings": {
+            "text": "Price Match Guarantee",
+            "link": ""
+          }
+        },
+        "announcement-bar-4": {
+          "type": "announcement",
+          "settings": {
+            "text": "1 Year Bat Warranty",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement-bar-1",
+        "announcement-bar-2",
+        "announcement-bar-3",
+        "announcement-bar-4"
       ],
       "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "change_slides_speed": 4,
         "color_scheme": "background-1",
         "show_line_separator": true,
         "show_social": false,
