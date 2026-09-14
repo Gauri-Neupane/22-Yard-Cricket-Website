@@ -31,10 +31,10 @@
           "settings": {
             "button_label_1": "Shop now",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "Shop Bats",
             "button_link_2": "shopify://collections/cricket-bats",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
           }
         }
       },
@@ -44,18 +44,18 @@
         "buttons"
       ],
       "settings": {
-        "image": "shopify://shop_images/22yard-store-wall-display.jpg",
+        "image": "shopify://shop_images/Home_Page_Main_Logo.png",
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
         "text_box_opacity": 55,
-        "color_scheme": "background-2",
+        "color_scheme": "inverse",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "category_showcase": {
@@ -63,27 +63,39 @@
       "blocks": {
         "bats": {
           "type": "featured_collection",
-          "settings": { "collection": "cricket-bats" }
+          "settings": {
+            "collection": "cricket-bats"
+          }
         },
         "helmets": {
           "type": "featured_collection",
-          "settings": { "collection": "cricket-helmets-1" }
+          "settings": {
+            "collection": "cricket-helmets-1"
+          }
         },
         "shoes": {
           "type": "featured_collection",
-          "settings": { "collection": "cricket-shoes" }
+          "settings": {
+            "collection": "cricket-shoes"
+          }
         },
         "pads": {
           "type": "featured_collection",
-          "settings": { "collection": "cricket-pads" }
+          "settings": {
+            "collection": "cricket-pads"
+          }
         },
         "bags": {
           "type": "featured_collection",
-          "settings": { "collection": "cricket-bags" }
+          "settings": {
+            "collection": "cricket-bags"
+          }
         },
         "bundles": {
           "type": "featured_collection",
-          "settings": { "collection": "bundles" }
+          "settings": {
+            "collection": "bundles"
+          }
         }
       },
       "block_order": [
@@ -144,7 +156,9 @@
             "button_label_1": "Enquire About Repairs",
             "button_link_1": "shopify://pages/contact",
             "button_style_secondary_1": false,
-            "button_label_2": ""
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
@@ -159,6 +173,7 @@
         "desktop_content_position": "top-right",
         "desktop_content_alignment": "right",
         "show_text_box": false,
+        "text_box_opacity": 100,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
@@ -186,7 +201,10 @@
           "settings": {
             "button_label": "Enquire About Repairs",
             "button_link": "shopify://pages/contact",
-            "button_label_2": ""
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
@@ -212,7 +230,10 @@
           "settings": {
             "button_label_1": "Enquire Now",
             "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": true
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
@@ -227,6 +248,7 @@
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
+        "text_box_opacity": 100,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "left",
@@ -254,7 +276,10 @@
           "settings": {
             "button_label": "Enquire Now",
             "button_link": "shopify://pages/contact",
-            "button_label_2": ""
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
