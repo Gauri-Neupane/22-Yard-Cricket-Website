@@ -11,6 +11,15 @@
       grid-template-columns: repeat({{ section.blocks.size }}, 1fr);
       gap: 1.5rem;
     }
+
+    #PromoRow-{{ section.id }} .promo-row__item {
+      height: {{ section.settings.desktop_height }}px;
+    }
+
+    #PromoRow-{{ section.id }} .promo-row__item img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   #PromoRow-{{ section.id }} .promo-row__item {
@@ -38,11 +47,17 @@
   #PromoRow-{{ section.id }} .promo-row__content--bottom-left { align-items: flex-end; justify-content: flex-start; }
   #PromoRow-{{ section.id }} .promo-row__content--bottom-right { align-items: flex-end; justify-content: flex-end; }
   #PromoRow-{{ section.id }} .promo-row__content--bottom-center { align-items: flex-end; justify-content: center; }
+
+  {%- for block in section.blocks -%}
+    #PromoRow-{{ section.id }} [data-block-id="{{ block.id }}"] img {
+      object-position: {{ block.settings.image_position | replace: '-', ' ' }};
+    }
+  {%- endfor -%}
 {%- endstyle -%}
 
 <div id="PromoRow-{{ section.id }}" class="promo-row page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- for block in section.blocks -%}
-    <div class="promo-row__item" {{ block.shopify_attributes }}>
+    <div class="promo-row__item" data-block-id="{{ block.id }}" {{ block.shopify_attributes }}>
       {%- if block.settings.image != blank -%}
         {{
           block.settings.image
@@ -82,6 +97,16 @@
   "settings": [
     {
       "type": "range",
+      "id": "desktop_height",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "label": "Image height on desktop",
+      "default": 400
+    },
+    {
+      "type": "range",
       "id": "padding_top",
       "min": 0,
       "max": 100,
@@ -110,6 +135,24 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image crop position (desktop)",
+          "info": "Controls which part of the image stays visible when it's cropped to match the shared row height.",
+          "options": [
+            { "value": "center-center", "label": "Center" },
+            { "value": "left-center", "label": "Left" },
+            { "value": "right-center", "label": "Right" },
+            { "value": "center-top", "label": "Top" },
+            { "value": "center-bottom", "label": "Bottom" },
+            { "value": "left-bottom", "label": "Bottom left" },
+            { "value": "right-bottom", "label": "Bottom right" },
+            { "value": "left-top", "label": "Top left" },
+            { "value": "right-top", "label": "Top right" }
+          ],
+          "default": "center-center"
         },
         {
           "type": "text",
