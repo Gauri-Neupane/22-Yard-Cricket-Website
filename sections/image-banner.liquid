@@ -29,6 +29,14 @@
   }
 {%- endstyle -%}
 
+{%- if section.settings.show_text_box -%}
+  {%- style -%}
+    #Banner-{{ section.id }} .banner__box {
+      background: rgba(var(--color-background), {{ section.settings.text_box_opacity | divided_by: 100.0 }});
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
 {%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
@@ -316,6 +324,16 @@
       "id": "show_text_box",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "range",
+      "id": "text_box_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100,
+      "label": "Text box background opacity"
     },
     {
       "type": "color_scheme",
