@@ -101,10 +101,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item {
   padding: 1.1rem 3rem;
   text-decoration: none;
-  font-size: calc(1.6rem / var(--font-body-scale));
+  font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  color: #000000;
 }
 
 .menu-drawer__menu-item--highlight,

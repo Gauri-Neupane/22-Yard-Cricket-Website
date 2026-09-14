@@ -2835,21 +2835,21 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem calc(0.6rem / var(--font-body-scale));
+  padding: 1.2rem 0.5rem;
   text-decoration: none;
-  color: rgb(var(--color-foreground));
+  color: #000000;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  font-size: calc(1.3rem / var(--font-body-scale));
+  font-size: 1.5rem;
   white-space: nowrap;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1400px) {
   .header__menu-item {
-    padding: 1.2rem calc(0.35rem / var(--font-body-scale));
-    font-size: calc(1.15rem / var(--font-body-scale));
-    letter-spacing: 0.02em;
+    padding: 1.2rem 0.22rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.01em;
   }
 }
 
