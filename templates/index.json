@@ -58,40 +58,140 @@
         "show_text_below": true
       }
     },
-    "promo_row": {
-      "type": "promo-row",
+    "category_showcase": {
+      "type": "collection-list",
       "blocks": {
-        "bat_repairs": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
-            "image_position": "left-bottom",
-            "button_label": "Enquire About Repairs",
-            "button_link": "shopify://pages/contact",
-            "button_style_secondary": false,
-            "content_position": "bottom-left"
-          }
+        "bats": {
+          "type": "featured_collection",
+          "settings": { "collection": "cricket-bats" }
         },
-        "jerseys": {
-          "type": "banner",
+        "helmets": {
+          "type": "featured_collection",
+          "settings": { "collection": "cricket-helmets-1" }
+        },
+        "shoes": {
+          "type": "featured_collection",
+          "settings": { "collection": "cricket-shoes" }
+        },
+        "pads": {
+          "type": "featured_collection",
+          "settings": { "collection": "cricket-pads" }
+        },
+        "bags": {
+          "type": "featured_collection",
+          "settings": { "collection": "cricket-bags" }
+        },
+        "bundles": {
+          "type": "featured_collection",
+          "settings": { "collection": "bundles" }
+        }
+      },
+      "block_order": [
+        "bats",
+        "helmets",
+        "shoes",
+        "pads",
+        "bags",
+        "bundles"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Shop our collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bat_repairs_promo": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons": {
+          "type": "buttons",
           "settings": {
-            "image": "shopify://shop_images/custom-jerseys-banner.png",
-            "image_position": "left-center",
-            "button_label": "Enquire Now",
-            "button_link": "shopify://pages/contact",
-            "button_style_secondary": true,
-            "content_position": "bottom-left"
+            "button_label_1": "Enquire About Repairs",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": ""
           }
         }
       },
       "block_order": [
-        "bat_repairs",
-        "jerseys"
+        "buttons"
       ],
       "settings": {
-        "desktop_height": 400,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_08_48_14_PM.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "top-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "jersey_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Enquire Now",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": true
+          }
+        }
+      },
+      "block_order": [
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/custom-jerseys-banner.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": true
       }
     },
     "jersey_info": {
@@ -133,34 +233,6 @@
         "padding_bottom": 52
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Shop our collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -194,8 +266,10 @@
   },
   "order": [
     "hero",
+    "category_showcase",
     "featured_collection",
-    "promo_row",
+    "bat_repairs_promo",
+    "jersey_banner",
     "jersey_info",
     "rich_text"
   ]
